@@ -77,7 +77,7 @@ git apply ${riscv_isa_sim_patch}
 mkdir build
 pushd build
 
-../configure --prefix=$PWD
+../configure --build=arm-linux --prefix=$PWD
 make -j4
 popd 
 popd
