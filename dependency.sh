@@ -33,7 +33,7 @@ sudo apt-get install -y autoconf
 git clone http://git.veripool.org/git/verilator
 cd verilator
 git checkout v4.034
-autoconf && ./configure && make -j16 && sudo make install
+autoconf && ./configure --build=arm-linux && make -j16 && sudo make install
 cd ..
 
 echo "[*] dependencies for nutshell-release-211228"
@@ -48,6 +48,6 @@ sudo apt-get install -y binutils-riscv64-unknown-elf gcc-riscv64-unknown-elf
 git clone https://github.com/riscv-software-src/riscv-isa-sim.git
 mkdir riscv-isa-sim/build
 cd riscv-isa-sim/build
-../configure
+../configure --build=arm-linux
 make -j4
 sudo make install
