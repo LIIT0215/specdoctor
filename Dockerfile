@@ -1,8 +1,8 @@
 FROM ubuntu:20.04
-ENV http_proxy "http://docker.for.mac.host.internal:4780"
-ENV HTTP_PROXY "http://docker.for.mac.host.internal:4780"
-ENV https_proxy "http://docker.for.mac.host.internal:4780"
-ENV HTTPS_PROXY "http://docker.for.mac.host.internal:4780"
+# ENV http_proxy "http://docker.for.mac.host.internal:4780"
+# ENV HTTP_PROXY "http://docker.for.mac.host.internal:4780"
+# ENV https_proxy "http://docker.for.mac.host.internal:4780"
+# ENV HTTPS_PROXY "http://docker.for.mac.host.internal:4780"
 # Disable dialog questions
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
