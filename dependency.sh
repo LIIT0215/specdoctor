@@ -4,7 +4,7 @@ set -ex
 
 echo "[*] dependencies for chipyard-1.3.0"
 
-# sudo apt update
+sudo apt update
 sudo apt install -y curl build-essential bison flex
 sudo apt install -y libgmp-dev libmpfr-dev libmpc-dev zlib1g-dev vim git default-jdk default-jre
 sudo apt install -y unzip zip 
